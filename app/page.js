@@ -19,7 +19,7 @@ export default function Home()
   {
     try
     {
-      const url = '/requests/course'
+      const url = '/api/course'
       const response = await axios.get(url);
       setCourses(response.data)
     }
